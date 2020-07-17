@@ -1,10 +1,11 @@
 import Layout from "../components/Layout"
 import Head from "next/head"
 import fetch from "isomorphic-unfetch"
+import Prices from "../components/Prices"
 const Home = (props) => {
     return (
         <Layout>
-            <div>
+            <div className="home">
                 <Head>
                     <title>BitzPrice</title>
                     <link
@@ -12,9 +13,19 @@ const Home = (props) => {
                         rel="stylesheet"
                     ></link>
                 </Head>
-                <h1>Welcome to bitPrize</h1>
-                <p>{props.data.time.updated}</p>
+                <h1>Welcome to bitzPrice</h1>
+                <Prices data={props.data} />
             </div>
+            <style jsx>{`
+                .home {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                h1 {
+                    margin: 1rem;
+                }
+            `}</style>
         </Layout>
     )
 }

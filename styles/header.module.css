@@ -12,11 +12,11 @@
     margin: 0;
 }
 .header-list a:focus {
-    background-color: gray;
+    background-color: red;
 }
 
 .header-list a:hover {
-    background-color: gray;
+    background-color: red;
 }
 
 .header-list a {
