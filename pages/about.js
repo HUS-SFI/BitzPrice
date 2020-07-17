@@ -1,11 +1,12 @@
-import Header from "../components/Header"
 
+import Layout from "../components/Layout"
 const About = () => {
     return (
-        <div className="about">
-            <Header />
-            <p> An application to view prices</p>
-        </div>
+        <Layout>
+            <div className="about">
+                <p> An application to view prices</p>
+            </div>
+        </Layout>
     )
 }
 
