@@ -1,0 +1,28 @@
+.header-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    padding: 0;
+    background-color: black;
+    margin: 0;
+}
+
+.header-list li {
+    margin: 0;
+}
+.header-list a:focus {
+    background-color: gray;
+}
+
+.header-list a:hover {
+    background-color: gray;
+}
+
+.header-list a {
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+}
